@@ -1,7 +1,7 @@
 
 
 // Patches
-const {inject, errorHandler} = require('express-custom-error');
+const { inject, errorHandler } = require('express-custom-error');
 inject(); // Patch express in order to use async / await syntax
 
 // Require Dependencies
@@ -27,14 +27,15 @@ require('mandatoryenv').load([
 
 const { PORT } = process.env;
 
+const testDb = require("./config/testDb.js"); // init testDB
 
 // Instantiate an Express Application
 const app = express();
 
 
 // Configure Express App Instance
-app.use(express.json( { limit: '50mb' } ));
-app.use(express.urlencoded( { extended: true, limit: '10mb' } ));
+app.use(express.json({ limit: '50mb' }));
+app.use(express.urlencoded({ extended: true, limit: '10mb' }));
 
 // Configure custom logger middleware
 app.use(logger.dev, logger.combined);
@@ -60,9 +61,12 @@ app.use(errorHandler());
 // Handle not valid route
 app.use('*', (req, res) => {
     res
-    .status(404)
-    .json( {status: false, message: 'Endpoint Not Found'} );
+        .status(404)
+        .json({ status: false, message: 'Endpoint Not Found' });
 })
+
+testDb(); // test Database
+
 
 // Open Server on selected Port
 app.listen(

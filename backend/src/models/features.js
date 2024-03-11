@@ -12,7 +12,7 @@ const features = db.define('features', {
     name: {
         type: Sequelize.STRING
     },
-    image: {
+    imagePath: {
         type: Sequelize.STRING
     }
 })

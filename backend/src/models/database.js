@@ -10,7 +10,7 @@ const {
 
 const Sequelize = require('sequelize');
 
-const db = new Sequelize(DB_DATABASE, DB_USER, DB_PASSWORD, {
+const db = new Sequelize(DB_DATABASE, DB_USER, null, {
     host: DB_HOST,
     pool: {
         max: 10,
