@@ -1,0 +1,99 @@
+.login-container{
+    background-color: rgb(240, 242, 245);
+    .login-content{
+        width: 980px;
+        height: 80vh;
+        margin: 0 auto;
+        // border: 1px solid red;
+        position: relative;
+        display: flex;
+        .left-content{
+            width: 590px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            .logo{
+                img{
+                    height: 106px;
+                }
+                margin-left: -28px;
+            }
+            .message{
+                font-size: 25px;
+            }
+        }
+        .right-content{
+            width: 490px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            .login{
+                padding: 20px;
+                width: 350px;
+                display: flex;
+                flex-direction: column;
+                background-color: rgb(255, 255, 255);
+                border-radius: 8px;
+                box-shadow: 5px 5px 15px rgba(86, 86, 86, 0.243);
+                input, button{
+                    margin-bottom: 20px;
+                    border: 1px solid gray;
+                    border-radius: 5px;
+                    font-size: 18px;
+                }
+                button{
+                    border: none;
+                    cursor: pointer;
+                }
+                input{
+                    padding: 15px;
+                    border: 1px solid rgba(126, 126, 126, 0.249);
+                }
+                .forget-password{
+                    text-align: center;
+                    font-weight: 600;
+                    color: rgb(44, 100, 246);
+                    margin-bottom: 10px;
+                    cursor: pointer;
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                }
+                .create-acc-btn, .login-btn{
+                    padding: 15px;
+                    color: white;
+                }
+                .create-acc-btn{
+                    width: 50%;
+                    margin: auto;
+                    background-color: rgba(10, 177, 10, 0.869);
+                    margin-top: 15px;
+                    &:hover{
+                        background-color: rgba(43, 203, 43, 0.869);
+                    }
+                }
+                .login-btn{
+                    background-color: rgb(44, 100, 246);
+                    &:hover{
+                    background-color: rgb(72, 124, 255);
+                    }
+                }
+                hr{
+                    height: 0.5px;
+                    width: 100%;
+                    background-color: rgba(0, 0, 0, 0.237);
+                }
+            }
+            .note{
+                margin-top: 10px;
+                padding: 20px;
+                width: 350px;
+                text-align: center;
+            }
+
+        }
+    }
+    .footer{
+
+    }
+}

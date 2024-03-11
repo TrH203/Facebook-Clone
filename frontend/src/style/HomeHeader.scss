@@ -1,0 +1,106 @@
+.home-header-container{
+    width: 100%;
+    box-shadow: 0px 8px 10px -10px rgba(0, 0, 0, 0.308);
+    z-index: 2;
+    .home-header-content
+    {
+        background-color: white;
+        display: flex;
+        padding: 10px;
+        .left-container{
+            display: flex;
+            justify-self:start;
+            align-items: center;
+            width: 35%;
+            .facebook-logo{
+                background-image: url("../../public/icons8-facebook.svg");
+                height: 40px;
+                width: 40px;
+                background-position: center;
+                background-size: cover;
+            }
+            .search-bar{
+                width: 300px;
+                input{
+                    height: 35px;
+                    width: 180px;
+                    padding-left:30px ;
+                    border-radius: 15px;
+                    border: none;
+                    background-color: aliceblue;
+                }
+                .search-icon{
+                    .icon{
+                        width: 22px;
+                        height: 22px;
+                    }
+                    position: absolute;
+                    top: 19px;
+                    left: 55px;
+                }
+            }
+        }
+        .mid-container{
+            width: 30%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            .home{
+                background: url("../../public/icons8-home.svg");
+                
+            }
+            .video{
+                background: url("../../public/icons8-video-48.png");
+                
+            }
+            .shop{
+                background: url("../../public/icons8-shop-48.png");
+                
+            }
+            .social{
+                background: url("../../public/icons8-social-48.png");
+                
+            }
+            .social, .home, .video, .shop{
+                height: 30px;
+                width: 30px;
+                background-position: center;
+                background-size: cover;
+            }
+        }
+        .right-container{
+            display: flex;
+            justify-content:flex-end;
+            width: 35%;
+            .icon-container-right{
+                width: 40px;
+                height: 40px;
+                background-color: #dddddd;
+                margin-left: 10px;
+                display:flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 100%;
+                .menu{
+                background-image: url("../../public/icons8-menu-60.png");
+                }
+                .messenger{
+                    background-image:url("../../public/icons8-message-48.png");
+                }
+                .noti{
+                    background: url("../../public/icons8-alarm-48.png");
+                }
+                .avatar{
+                    background: url("../../public/icons8-avatar-48.png");
+                }
+                .menu, .messenger, .noti, .avatar{
+                    height: 22px;
+                    width: 22px;
+                    background-position: center;
+                    background-size: cover;
+                    // background-color: gray;
+                }
+            }
+        }
+    }
+}
