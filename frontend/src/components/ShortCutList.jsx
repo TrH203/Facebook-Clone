@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
-import "../style/ToolList.scss";
+import "../style/ShortCutList.scss";
 import { getAllFeature } from "../service/systemService";
-const ToolList = (props) => {
+const ShortCutList = (props) => {
     // const image = "/icons8-facebook.svg";
     const [topFeatures, setTopFeatures] = useState([]);
     const [botFeatures, setBotFeatures] = useState([]);
@@ -30,11 +30,11 @@ const ToolList = (props) => {
     }
     return (
         <>
-            <div className="tool-list-container">
-                <div className="tool-list-content">
-                    <div className="item-row">
-                        <div className="item-image" style={{ backgroundImage: `url(./icons8-avatar-48.png)` }}></div>
-                        <span className="user-name">Trọng Hiển</span>
+            <div className="shortcut-list-container">
+                <div className="shortcut-list-content">
+                    <div className="title">
+                        <div className="title-name">Lối tắt của bạn</div>
+                        <div className="edit-shortcut">Chỉnh sửa</div>
                     </div>
                     {topFeatures.map((item, index) => {
                         return (
@@ -71,4 +71,4 @@ const ToolList = (props) => {
         </>
     )
 }
-export default ToolList;
+export default ShortCutList;

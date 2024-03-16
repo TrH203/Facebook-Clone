@@ -1,5 +1,15 @@
 .home-container{
     z-index: 1;
     .home-content{
+        padding: 10px;
+        .left-content{
+            width: 20%;
+        }
+        .mid-content{
+            width: 60%;
+        }
+        .right-content{
+            width: 20%;
+        }
     }
 }
