@@ -16,6 +16,9 @@ const sponsors = db.define('sponsors', {
     },
     imagePath: {
         type: Sequelize.STRING
+    },
+    category: {
+        type: Sequelize.STRING
     }
 })
 

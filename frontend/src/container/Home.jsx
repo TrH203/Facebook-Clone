@@ -1,7 +1,7 @@
 import HomeHeader from "../components/HomeHeader";
 import ToolList from "../components/ToolList";
 import ShortCutList from "../components/ShortCutList";
-
+import Sponsor from "../components/Sponsor";
 import ScrollBar from "../components/ScrollBar";
 import "../style/Home.scss";
 const Home = () => {
@@ -16,12 +16,16 @@ const Home = () => {
                             <ToolList />
                         </ScrollBar>
                         <hr />
-                        <ScrollBar>
-                            <ShortCutList />
-                        </ScrollBar>
+                        {/* <ScrollBar> */}
+                        <ShortCutList />
+                        {/* </ScrollBar> */}
                     </div>
-                    <div className="mid-content"></div>
-                    <div className="right-content"></div>
+                    <div className="mid-content">
+                        <h1>Hello Mid</h1>
+                    </div>
+                    <div className="right-content">
+                        <Sponsor />
+                    </div>
                 </div>
             </div>
 

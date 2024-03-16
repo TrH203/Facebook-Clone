@@ -1,0 +1,37 @@
+.sponsor-container{
+    .sponsor-content{
+        .title{
+            font-size: 18px;
+            font-weight: bold;
+            padding: 10px;
+            color: gray;
+        }
+        .item-row{
+            text-decoration: none;
+            color: black;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            .item-image{
+                width: calc(40% - 2px);
+                // height: a;
+                min-height: 100px;
+                background-position: center;
+                background-size: cover;
+                border-radius: 10px;
+                border: 2px solid rgba(255, 255, 255);            
+            }
+            .message-container{
+                width: 55%;
+                .link{
+                    font-size: 12px;
+                    color:gray;
+                }
+            }
+        }
+        .item-row:hover{
+            background-color: rgba(175, 172, 172, 0.487);
+        }
+    }
+}
