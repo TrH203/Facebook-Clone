@@ -2,14 +2,18 @@
     z-index: 1;
     .home-content{
         padding: 10px;
+        height: calc(100vh - 80px);
         .left-content{
             width: 20%;
+            height: fit-content;
+            min-width: 200px;
         }
         .mid-content{
             width: 60%;
         }
         .right-content{
             width: 20%;
+            min-width: 200px;
         }
     }
 }
