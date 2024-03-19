@@ -22,15 +22,16 @@
             cursor: pointer;
 
         }
-        .title{
+        .title-container{
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
+            padding-top: 5px;
             .title-name{
                 color: gray;
-                font-weight: 700;
+                font-weight: bold;
                 font-size: 18px;
-                padding: 5px 0;
+                // padding: 5px 0;
             }
             .edit-shortcut{
                 color: rgba(24, 143, 198, 0);
@@ -57,7 +58,7 @@
     }
 }
 .shortcut-list-container:hover{
-    .title{
+    .title-container{
         .edit-shortcut{
             color: rgba(24, 143, 198);;
         }

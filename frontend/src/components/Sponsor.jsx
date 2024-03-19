@@ -6,9 +6,11 @@ const Sponsor = () => {
 
     useEffect(() => {
         const fetchAllSponsor = async () => {
-            const rs = await getAllSponsor();
-            setAllSponsor(rs);
-            console.log(allSponsor);
+            if (allSponsor !== null) {
+                const rs = await getAllSponsor();
+                setAllSponsor(rs);
+            }
+            //console.log(allSponsor);
         }
 
         fetchAllSponsor();

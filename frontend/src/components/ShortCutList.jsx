@@ -18,9 +18,6 @@ const ShortCutList = (props) => {
                 console.log(e);
             }
         }
-
-
-
         fetchDataFeatures();
     }, [])
 
@@ -32,7 +29,7 @@ const ShortCutList = (props) => {
         <>
             <div className="shortcut-list-container">
                 <div className="shortcut-list-content">
-                    <div className="title">
+                    <div className="title-container">
                         <div className="title-name">Lối tắt của bạn</div>
                         <div className="edit-shortcut">Chỉnh sửa</div>
                     </div>

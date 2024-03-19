@@ -3,7 +3,10 @@ import ToolList from "../components/ToolList";
 import ShortCutList from "../components/ShortCutList";
 import Sponsor from "../components/Sponsor";
 import ScrollBar from "../components/ScrollBar";
+import BirthDay from "../components/BirthDay";
 import "../style/Home.scss";
+import Contract from "../components/Contact";
+
 const Home = () => {
     return (
         <>
@@ -14,17 +17,17 @@ const Home = () => {
                     <div className="left-content">
                         <ScrollBar>
                             <ToolList />
+                            <hr />
+                            <ShortCutList />
                         </ScrollBar>
-                        <hr />
-                        {/* <ScrollBar> */}
-                        <ShortCutList />
-                        {/* </ScrollBar> */}
                     </div>
                     <div className="mid-content">
                         <h1>Hello Mid</h1>
                     </div>
                     <div className="right-content">
                         <Sponsor />
+                        <BirthDay />
+                        <Contract />
                     </div>
                 </div>
             </div>

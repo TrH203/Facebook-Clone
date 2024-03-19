@@ -19,8 +19,6 @@ const ToolList = (props) => {
             }
         }
 
-
-
         fetchDataFeatures();
     }, [])
 

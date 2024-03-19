@@ -6,16 +6,26 @@
         display: flex;
         .left-content{
             width: 20%;
-            height: fit-content;
-            min-width: 200px;
+            height: inherit;
+            min-width: 250px;
         }
         .mid-content{
             width: 60%;
             border: 1px solid red;
+            min-width: 500px;
         }
         .right-content{
             width: 20%;
-            min-width: 200px;
+            min-width: 250px;
+            height: inherit;
+        }
+
+        /// định nghĩa riêng
+        .title{
+            font-size: 18px;
+            font-weight: bold;
+            padding: 10px;
+            color: gray;
         }
     }
 }
