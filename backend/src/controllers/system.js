@@ -12,7 +12,7 @@ const getAllFeature = async (req, res) => {
 }
 
 const getSponsor = async (req, res) => {
-    console.log(req);
+    //console.log(req);
     const sponsors = await sponsorModel.findAll();
     res.json(sponsors);
 }
