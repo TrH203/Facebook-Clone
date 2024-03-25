@@ -5,6 +5,6 @@ const system = require('../controllers/system.js');
 
 router.get("/api/features", system.getAllFeature);
 router.get("/api/sponsors", system.getSponsor);
-
+router.get("/api/user-contract", system.getUserContract);
 
 module.exports = router;
