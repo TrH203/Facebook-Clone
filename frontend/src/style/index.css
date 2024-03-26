@@ -15,23 +15,3 @@ code {
   padding: 0 !important;
   margin: 0 !important;
 }
-.item-row {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  margin-top: 10px;
-  transition: 0.1s;
-  /* border-radius: 5px; */
-  cursor: pointer;
-}
-.item-image {
-  height: 35px;
-  width: 35px;
-  background-position: center;
-  background-size: cover;
-  border-radius: 3px;
-  margin-right: 10px;
-}
-.item-row:hover {
-  /* background-color: rgba(175, 172, 172, 0.487); */
-}
