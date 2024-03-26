@@ -1,0 +1,14 @@
+.contract-container{
+    .item-row{
+        padding-left: 10px;
+        .item-image{
+            border-radius: 100%;
+        }
+        .feature-name{
+            font-size: 14px;
+        }
+    }
+    .item-row:hover{
+        background-color: rgba(175, 172, 172, 0.487);
+    }
+}

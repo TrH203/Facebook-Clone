@@ -9,8 +9,13 @@ const getAllSponsor = async () => {
     const rs = await axios.get("http://localhost:6969/api/sponsors");
     return rs.data;
 }
+const getAllContract = async (userId) => {
+    const rs = await axios.get(`http://localhost:6969/api/user-contract?userId=${userId}`);
+    return rs.data;
+}
 
 export {
     getAllFeature,
     getAllSponsor,
+    getAllContract,
 }

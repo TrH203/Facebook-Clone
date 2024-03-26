@@ -7,7 +7,6 @@ function App() {
       <div class="app-container">
         <Home />
         {/* <LoginPage /> */}
-
       </div>
     </>
   );

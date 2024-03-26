@@ -21,7 +21,7 @@ const getSponsor = async (req, res) => {
 }
 const getUserContract = async (req, res) => {
     const userId = req.query.userId;
-    console.log(userId);
+    //console.log(userId);
     const query = `Select * from Friends Where friend1Id = '${userId}' OR friend2Id = '${userId}';`;
     const contracts = await db.query(query, { raw: false, type: QueryTypes.SELECT });
     // console.log(contracts);
@@ -37,7 +37,7 @@ const getUserContract = async (req, res) => {
         }
     });
 
-    console.log(friendList);
+    //console.log(friendList);
 
     let query2;
     const rs = [];
@@ -47,7 +47,7 @@ const getUserContract = async (req, res) => {
         console.log(friendInfo[0]);
         rs.push(friendInfo[0]);
     }));
-    res.json({ rs });
+    res.json(rs);
 }
 
 module.exports = {

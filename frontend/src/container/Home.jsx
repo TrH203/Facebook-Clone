@@ -25,9 +25,13 @@ const Home = () => {
                         <h1>Hello Mid</h1>
                     </div>
                     <div className="right-content">
-                        <Sponsor />
-                        <BirthDay />
-                        <Contract />
+                        <ScrollBar>
+                            <Sponsor />
+                            <hr />
+                            <BirthDay />
+                            <hr />
+                            <Contract />
+                        </ScrollBar>
                     </div>
                 </div>
             </div>

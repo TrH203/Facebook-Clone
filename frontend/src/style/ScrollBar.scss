@@ -1,11 +1,16 @@
 .scroll-container {
-    width: 100%;
+    // width: 100%;
     height: inherit; /* Chiều cao cố định của container, có thể điều chỉnh theo nhu cầu */
-    overflow-y: auto; /* Hiển thị scrollbar khi nội dung vượt qua chiều cao */
+    overflow-y: hidden;
+    overflow-x: hidden;/* Hiển thị scrollbar khi nội dung vượt qua chiều cao */
+    position: relative;
+}
+.scroll-container:hover{
+    overflow-y: scroll;
 }
 /* Tùy chỉnh thanh cuộn trên trình duyệt Chrome */
 .scroll-container::-webkit-scrollbar {
-    width: 10px; /* Chiều rộng của thanh cuộn */
+    width: 7px; /* Chiều rộng của thanh cuộn */
 }
 
   /* Tùy chỉnh gạch trên thanh cuộn */

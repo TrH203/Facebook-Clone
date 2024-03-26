@@ -1,12 +1,14 @@
 .sponsor-container{
     .sponsor-content{
+        // width: inherit;
         .item-row{
+            width: inherit;
             text-decoration: none;
             color: black;
             display: flex;
-            justify-content: space-between;
+            justify-content: flex-start;
             align-items: center;
-            padding: 10px;
+            padding: 5px 10px;
             .item-image{
                 width: calc(40% - 4px);
                 min-width: 100px;
